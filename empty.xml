@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fsm>
+    <imports>
+        <file path="" />
+    </imports>
+    <name></name>
+    <description></description>
+    <version></version>
+    <states>
+        <state>
+            <name></name>
+            <description></description>
+            <callbacks>
+                <entry></entry>
+                <update></update>
+                <exit></exit>
+            </callbacks>
+        </state>
+    </states>
+
+    <events>
+        <event>
+            <name></name>
+            <description></description>
+        </event>
+    </events>
+
+    <transitions>
+        <transition>
+            <name></name>
+            <description></description>
+            <from name=""/>
+            <to name=""/>
+            <reactions>
+                <event name=""/>
+            </reactions>
+            <guards>
+                <guard name=""/>
+            </guards>
+        </transition>
+    </transitions>
+
+    <guards>
+        <guard>
+            <name></name>
+            <description></description>
+        </guard>
+    </guards>
+</fsm>

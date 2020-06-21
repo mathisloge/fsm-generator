@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fsm>
+    <imports>
+        <file path="" />
+    </imports>
+    <name>Test1</name>
+    <description>Test1Desc</description>
+    <version>0.0.1</version>
+    <states>
+        <state>
+            <name>initial</name>
+            <description></description>
+            <callbacks>
+                <entry></entry>
+                <update></update>
+                <exit></exit>
+            </callbacks>
+        </state>
+        <initial name="initial"/>
+    </states>
+
+    <events>
+        <event>
+            <name>Event1</name>
+            <description>description for Event1</description>
+        </event>
+    </events>
+
+    <transitions>
+        <transition>
+            <name>Transition1</name>
+            <description>description for Transition1</description>
+            <from name=""/>
+            <to name=""/>
+            <event name=""/>
+            <guards>
+                <guard name=""/>
+            </guards>
+        </transition>
+    </transitions>
+
+    <guards>
+        <guard>
+            <name>Guard1</name>
+            <description>description for Guard1</description>
+        </guard>
+    </guards>
+</fsm>
