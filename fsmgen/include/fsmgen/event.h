@@ -2,7 +2,7 @@
 
 namespace fsmgen
 {
-    class Event
+    struct Event
     {
     };
 } // namespace fsmgen

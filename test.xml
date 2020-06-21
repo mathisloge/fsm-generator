@@ -33,7 +33,10 @@
             <name>Event1</name>
             <description>description for Event1</description>
             <args>
-                <arg type="int" name="event_data">
+                <arg type="int">
+                    <name>payload1</name>
+                    <description>description for Payload1</description>
+                </arg>
             </args>
         </event>
     </events>

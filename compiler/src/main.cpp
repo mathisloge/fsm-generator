@@ -14,5 +14,5 @@ int main()
 
     CodeGenerator code_gen{fsm_el};
 
-    code_gen.generateCode(std::filesystem::path("/media/mathis/ubuntu/example/src/gen"));
+    code_gen.generateCode(std::filesystem::path("/media/mathis/ubuntu/fsm-generator/example/src/gen"));
 }

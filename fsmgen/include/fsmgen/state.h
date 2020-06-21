@@ -4,6 +4,7 @@ namespace fsmgen
 {
     class State
     {
-    public:
+        State() {}
+        virtual ~State() {}
     };
 } // namespace fsmgen

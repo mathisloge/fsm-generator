@@ -1,5 +1,7 @@
 #pragma once
+#include <ostream>
+#include "../xml/event_element.h"
 
-class Event {
-    
-};
+namespace event {
+    void generateEvent(std::ostream& input, const EventElement& event_el);
+}
