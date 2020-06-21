@@ -1,4 +1,4 @@
 # WIP
 
-this project should fullfill the purpose of automatic fsm generation and documentation of those. 
-(auto generation of plantuml diagrams)
+this project should fulfill the purpose of automatic fsm generation and documentation.
+(automatic generation of plantuml diagrams)
