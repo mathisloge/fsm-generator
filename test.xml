@@ -32,6 +32,9 @@
         <event>
             <name>Event1</name>
             <description>description for Event1</description>
+            <args>
+                <arg type="int" name="event_data">
+            </args>
         </event>
     </events>
 

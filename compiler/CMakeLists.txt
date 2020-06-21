@@ -11,6 +11,7 @@ add_executable(fsmcompiler
     src/xml/event_element.cpp
     src/xml/guard_element.cpp
     src/xml/transition_element.cpp
+    src/code_generator.cpp
 )
 set_property(TARGET fsmcompiler PROPERTY CXX_STANDARD 20)
 

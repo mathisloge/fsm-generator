@@ -127,6 +127,19 @@ const std::string_view &FsmElement::type() const
     return type_;
 }
 
+const std::map<std::string, std::shared_ptr<StateElement>> &FsmElement::states() const
+{
+    return states_;
+}
+const std::map<std::string, std::shared_ptr<EventElement>> &FsmElement::events() const
+{
+    return events_;
+}
+const std::map<std::string, std::shared_ptr<GuardElement>> &FsmElement::guards() const
+{
+    return guards_;
+}
+
 FsmElement::~FsmElement()
 {
 }
