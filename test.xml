@@ -8,7 +8,7 @@
     <version>0.0.1</version>
     <states>
         <state>
-            <name>initial</name>
+            <name>state1</name>
             <description></description>
             <callbacks>
                 <entry></entry>
@@ -16,7 +16,16 @@
                 <exit></exit>
             </callbacks>
         </state>
-        <initial name="initial"/>
+        <state>
+            <name>state2</name>
+            <description></description>
+            <callbacks>
+                <entry></entry>
+                <update></update>
+                <exit></exit>
+            </callbacks>
+        </state>
+        <initial name="state1"/>
     </states>
 
     <events>
@@ -30,12 +39,13 @@
         <transition>
             <name>Transition1</name>
             <description>description for Transition1</description>
-            <from name=""/>
-            <to name=""/>
-            <event name=""/>
+            <from name="state1"/>
+            <to name="state2"/>
+            <event name="Event1"/>
             <guards>
-                <guard name=""/>
+                <guard name="Guard1"/>
             </guards>
+            <callback></callback>
         </transition>
     </transitions>
 
