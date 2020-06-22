@@ -15,9 +15,10 @@ class FsmElement : public BaseElement
 public:
     explicit FsmElement(const tinyxml2::XMLElement *const root);
     void process() override;
-    const std::map<std::string, std::shared_ptr<StateElement>>& states() const;
-    const std::map<std::string, std::shared_ptr<EventElement>>& events() const;
-    const std::map<std::string, std::shared_ptr<GuardElement>>& guards() const;
+
+    const std::map<std::string, std::shared_ptr<StateElement>> &states() const;
+    const std::map<std::string, std::shared_ptr<EventElement>> &events() const;
+    const std::map<std::string, std::shared_ptr<GuardElement>> &guards() const;
     ~FsmElement();
 
 private:
@@ -26,6 +27,7 @@ private:
     void processEvents();
     void processGuards();
     void processTransitions();
+    void validate() const;
 
 private:
     std::string version_;

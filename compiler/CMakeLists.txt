@@ -14,6 +14,9 @@ add_executable(fsmcompiler
     src/xml/arg_element.cpp
     src/code_generator.cpp
     src/codegen/event.cpp
+    src/codegen/state.cpp
+
+    src/diagram/diagram_generator.cpp
 )
 set_property(TARGET fsmcompiler PROPERTY CXX_STANDARD 20)
 

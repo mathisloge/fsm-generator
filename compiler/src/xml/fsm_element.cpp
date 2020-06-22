@@ -7,6 +7,12 @@ FsmElement::FsmElement(const tinyxml2::XMLElement *const root)
 {
 }
 
+
+// todo: run through the complete fsm and check if we got some double path
+void FsmElement::validate() const
+{
+}
+
 void FsmElement::process()
 {
     BaseElement::process();
@@ -22,6 +28,8 @@ void FsmElement::process()
     processEvents();
     processGuards();
     processTransitions();
+
+    validate();
 }
 
 void FsmElement::processStates()
