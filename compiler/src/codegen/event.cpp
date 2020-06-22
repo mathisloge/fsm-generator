@@ -11,7 +11,7 @@ namespace event
         constexpr std::string_view args_token = "@args@";
         std::string event_class = std::string(""\
         "/**\n"\
-        "* \\description @description@\n\n"\
+        "* \\description @description@\n"\
         "*/\n"\
         "struct @class@ : fsmgen::Event {\n"\
         "@args@\n"\
