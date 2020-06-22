@@ -13,14 +13,19 @@
             <callbacks>
                 <entry></entry>
                 <update></update>
-                <exit></exit>
+                <exit>
+                    <event/>
+                    <event name="Event1"/>
+                </exit>
             </callbacks>
         </state>
         <state>
             <name>state2</name>
             <description></description>
             <callbacks>
-                <entry></entry>
+                <entry>
+                    <event name="Event1"/>
+                </entry>
                 <update></update>
                 <exit></exit>
             </callbacks>
@@ -51,7 +56,7 @@
             <guards>
                 <guard name="Guard1"/>
             </guards>
-            <callback></callback>
+            <callback/>
         </transition>
     </transitions>
 

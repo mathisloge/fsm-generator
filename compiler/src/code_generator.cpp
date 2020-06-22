@@ -16,6 +16,8 @@ void CodeGenerator::generateCode(fs::path output_path)
     output_path.append(main_fsm_.name() + ".h");
     std::ofstream ofs(output_path);
     
+
+    ofs << "#pragma once\n#include <fsmgen/fsmgen.h>\n\n";
     for(const auto& event_el : main_fsm_.events())
     {
         event::generateEvent(ofs, *event_el.second);

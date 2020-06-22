@@ -1,12 +1,15 @@
 #include "event.h"
 #include <string>
+#include <string_view>
 #include <sstream>
 namespace event
 {
     void generateEvent(std::ostream &input, const EventElement &event_el)
     {
+        constexpr std::string_view class_token = "@class@";
+        constexpr std::string_view desc_token = "@description@";
+        constexpr std::string_view args_token = "@args@";
         std::string event_class = std::string(""\
-        "#include <fsmgen/event.h>\n"\
         "/**\n"\
         "* \\description @description@\n\n"\
         "*/\n"\
@@ -14,8 +17,8 @@ namespace event
         "@args@\n"\
         "};\n");
 
-        event_class.replace(event_class.find("@class@"),  std::string("@class@").length(), event_el.name());
-        event_class.replace(event_class.find("@description@"), std::string("@description@").length(), event_el.description());
+        event_class.replace(event_class.find(class_token),  class_token.length(), event_el.name());
+        event_class.replace(event_class.find(desc_token), desc_token.length(), event_el.description());
 
         if (event_el.args().size() > 0)
         {
@@ -25,7 +28,7 @@ namespace event
                 variables << "\t" << arg->dataType() << " " << arg->name() << ";\n";
             }
             const std::string args_str(variables.str());
-            event_class.replace(event_class.find("@args@"), std::string("@args@").length(), args_str);
+            event_class.replace(event_class.find(args_token), args_token.length(), args_str);
         }
         input << event_class;
     }
